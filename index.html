@@ -3,15 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <title>Doses</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html {
+                font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+        </style>
     </head>
     <body>
         <h1>Doses converter</h1>
-        <label for="proof">Proof (%)</label>
-        <input type="number" id="proof" value="40">
-        <label for="volume">Volume (cl)</label>
-        <input type="number" id="volume" value="10">
-        <label for="dose">Dose</label>
-        <input type="number" id="dose" value="3.2">
+
+        <p>
+            <label for="proof">Proof (%)</label>
+            <input type="number" id="proof" value="40">
+        </p>
+
+        <p>
+            <label for="volume">Volume (cl)</label>
+            <input type="number" id="volume" value="10">
+            <button id="compute-volume">Compute</button>
+        </p>
+
+        <p>
+            <label for="dose">Dose</label>
+            <input type="number" id="dose" value="3.2">
+            <button id="compute-dose">Compute</button>
+        </p>
+
         <script src="main.js" defer></script>
     </body>
 </html>
