@@ -8,10 +8,19 @@
             html {
                 font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             }
+
+            footer {
+                margin-top: 3em;
+            }
         </style>
     </head>
     <body>
         <h1>Doses converter</h1>
+
+        <p>
+            Given an alcohol proof in percent, compute the number of alcohol doses in a volume
+            or the volume for a number of doses.
+        </p>
 
         <p>
             <label for="proof">Proof (%)</label>
@@ -21,14 +30,28 @@
         <p>
             <label for="volume">Volume (cl)</label>
             <input type="number" id="volume" value="10">
-            <button id="compute-volume">Compute</button>
+            <button id="compute-volume"
+                title="Compute the volume given the proof and the number of doses">
+                Compute
+            </button>
         </p>
 
         <p>
             <label for="dose">Dose</label>
             <input type="number" id="dose" value="3.2">
-            <button id="compute-dose">Compute</button>
+            <button id="compute-dose"
+                title="Compute the number of doses given the proof and the volume">
+                Compute
+            </button>
         </p>
+
+        <footer>
+            <p>
+                Checkout the code on <a href="https://github.com/Crocmagnon/doses">GitHub</a>.<br>
+                This piece of code is released in the public domain. See the <a href="https://github.com/Crocmagnon/doses/blob/master/LICENSE">license</a> for
+                more details.
+            </p>
+        </footer>
 
         <script src="main.js" defer></script>
     </body>
