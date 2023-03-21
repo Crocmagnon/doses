@@ -17,7 +17,7 @@ repos:
         args:
           - --markdown-linebreak-ext=md
   - repo: https://github.com/rtts/djhtml
-    rev: 3.0.5
+    rev: 3.0.6
     hooks:
       - id: djhtml
   - repo: https://github.com/pre-commit/mirrors-prettier
